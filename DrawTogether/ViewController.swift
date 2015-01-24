@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         if (object as CBLLiveQuery) == liveQuery {
-            drawView.lines.removeAll(keepCapacity: false)
+            drawView.polylines.removeAll(keepCapacity: false)
             
             for (index, row) in enumerate(liveQuery.rows.allObjects) {
-                drawView.lines.append(Line(forDocument: (row as CBLQueryRow).document))
+                drawView.polylines.append(Polyline(forDocument: (row as CBLQueryRow).document))
             }
             
             drawView.setNeedsDisplay()
@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearTap(sender: AnyObject) {
-        drawView.lines.map { (line) -> Bool in
-            line.deleteDocument(nil)
+        drawView.polylines.map { (polyline) -> Bool in
+            polyline.deleteDocument(nil)
             return true
         }
-        drawView.lines = []
+        drawView.polylines = []
         drawView.setNeedsDisplay()
     }
     
