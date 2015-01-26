@@ -10,7 +10,7 @@ import UIKit
 
 let kDatabase = CBLManager.sharedInstance().databaseNamed("drawtogether", error: nil)
 typealias CBLDoc = CBLDocument
-let kSyncGateway = "http://192.168.212.45:4984/drawtogether"
+let kSyncGateway = "http://10.17.4.9:4984/drawtogether"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

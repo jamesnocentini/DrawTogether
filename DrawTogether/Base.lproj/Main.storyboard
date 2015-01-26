@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,33 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHt-dZ-iQT" customClass="DrawView" customModule="DrawTogether" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="58" width="600" height="542"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFl-bM-VPR">
-                                <rect key="frame" x="282" y="20" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHE-SL-t8l">
+                                <rect key="frame" x="281" y="20" width="37" height="30"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTO-jj-9yU"/>
+                                    <action selector="clearTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjn-Bx-iay"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gHt-dZ-iQT" firstAttribute="top" secondItem="LFl-bM-VPR" secondAttribute="bottom" constant="8" id="Adx-31-Ics"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gHt-dZ-iQT" secondAttribute="trailing" constant="-16" id="BF8-yO-JCi"/>
-                            <constraint firstItem="LFl-bM-VPR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Tet-Ry-OUy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gHt-dZ-iQT" secondAttribute="bottom" id="e3U-o6-hmR"/>
-                            <constraint firstAttribute="centerX" secondItem="LFl-bM-VPR" secondAttribute="centerX" constant="-0.5" id="ugK-S5-NUB"/>
-                            <constraint firstItem="gHt-dZ-iQT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="yhs-na-bFZ"/>
+                            <constraint firstAttribute="centerX" secondItem="eHE-SL-t8l" secondAttribute="centerX" id="Qum-Dx-fVu"/>
+                            <constraint firstItem="eHE-SL-t8l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RLJ-Dg-hmu"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="drawView" destination="gHt-dZ-iQT" id="iej-Tm-hNE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
